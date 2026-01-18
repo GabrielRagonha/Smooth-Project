@@ -1,0 +1,60 @@
+.animals {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25vh;
+  color: white;
+  padding: 10%;
+}
+
+.animalDescription {
+  display: flex;
+  height: 700px;
+  gap: 5%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+
+.imageContainer img {
+  object-fit: cover;
+}
+
+.column {
+  width: 20%;
+  display: flex;
+  font-size: 1.5vw;
+}
+
+.column:last-of-type {
+  font-size: 1vw;
+  align-items: flex-end;
+}
+
+.animalsList {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.animalEl {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid white;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.animalEl:last-of-type {
+  border-bottom: 1px solid white;
+}
+
+.animalEl p {
+  margin: 0;
+  margin-block: 40px 20px;
+}
