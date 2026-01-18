@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 
-const index = () => {
+const Index = () => {
   const backgroundImage = useRef(null);
   const introImage = useRef(null);
 
@@ -36,7 +36,11 @@ const index = () => {
   return (
     <div className={styles.intro}>
       <div ref={backgroundImage} className={styles.backgroundImage}>
-        <Image src="/images/background.png" fill alt="Teste" />
+        <Image
+          src="/images/background.png"
+          fill
+          alt="Imagem de fundo da introdução"
+        />
       </div>
 
       <div className={styles.introContainer}>
@@ -46,7 +50,7 @@ const index = () => {
           data-scroll-speed="0.3"
           className={styles.introImage}
         >
-          <Image src="/images/intro.png" fill alt="Teste 2" />
+          <Image src="/images/intro.png" fill alt="Imagem da introdução" />
         </div>
 
         <h1 data-scroll data-scroll-speed="0.7">
@@ -57,4 +61,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
